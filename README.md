@@ -46,7 +46,7 @@ A modern movie application built with React, TypeScript, and Vite. This app prov
    npm run dev
    ```
 
-5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+5. Open [https://movie-app-nine-gamma-88.vercel.app/) in your browser.
 
 ## Available Scripts
 
