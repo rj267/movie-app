@@ -3,6 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 import { Adsense } from "@ctrl/react-adsense";
 
+// DIRECT IMPORT (Safe for Vercel)
+import Live from "./pages/Live"; 
+
 import {
   Header,
   Footer,
@@ -31,7 +34,7 @@ const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const RecentRelease = lazy(() => import("./pages/RecentRelease"));
 const TopIMDB = lazy(() => import("./pages/TopIMDB"));
 const Premium = lazy(() => import("./pages/Premium"));
-const Live = lazy(() => import("./pages/Live"));
+// const Live = lazy(() => import("./pages/Live")); // Ise comment kar diya
 const YouMustWatch = lazy(() => import("./pages/YouMustWatch"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -83,5 +86,3 @@ const App = () => {
 };
 
 export default App;
-
-// trigger build
